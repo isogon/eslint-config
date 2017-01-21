@@ -1,0 +1,58 @@
+{
+  "name": "@isogon/eslint-config",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=6"
+  },
+  "description": "The way all isogon code should look.",
+  "keywords": [
+    "isogon",
+    "eslint",
+    "config",
+    "react",
+    "babel",
+    "es6"
+  ],
+  "private": false,
+  "license": "Unlicense",
+  "contributors": [{
+    "name": "Kegan Myers",
+    "email": "kegan@keganmyers.com",
+    "url": "https://keganmyers.com"
+  }],
+  "homepage": "https://github.com/isogon/eslint-config",
+  "bugs": "https://github.com/isogon/eslint-config/issues",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "peerDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.13.0",
+    "eslint-config-airbnb": "14.0.0",
+    "eslint-config-airbnb-base": "11.0.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "eslint-plugin-html": "^1.5.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.13.0",
+    "eslint-config-airbnb": "14.0.0",
+    "eslint-config-airbnb-base": "11.0.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "eslint-plugin-html": "^1.5.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
+  }
+}

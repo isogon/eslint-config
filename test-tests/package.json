@@ -1,0 +1,25 @@
+{
+  "name": "@isogon/test-test-eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "mocha -r babel-register -r setup *.spec.js"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "../tests.js"
+  }
+}

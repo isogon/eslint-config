@@ -1,6 +1,5 @@
-# editorconfig.org
-# define and maintain consistent coding styles between different editors and IDEs
-
+# Isogon standard .editorconfig
+# Version 0.0.1
 root = true
 
 [*]

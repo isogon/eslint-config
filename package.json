@@ -15,20 +15,26 @@
   ],
   "private": false,
   "license": "Unlicense",
-  "contributors": [{
-    "name": "Kegan Myers",
-    "email": "kegan@keganmyers.com",
-    "url": "https://keganmyers.com"
-  }],
+  "contributors": [
+    {
+      "name": "Kegan Myers",
+      "email": "kegan@keganmyers.com",
+      "url": "https://keganmyers.com"
+    }
+  ],
   "homepage": "https://github.com/isogon/eslint-config",
   "bugs": "https://github.com/isogon/eslint-config/issues",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "test": "yarn lint",
+    "lint": "eslint .",
+    "prepublish": ""
   },
-  "pre-commit": [
-    "lint"
-  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
   "peerDependencies": {
     "babel-eslint": "^7.0.0",
     "eslint": "^3.13.0",
@@ -42,9 +48,11 @@
     "eslint-plugin-react": "^6.9.0"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.22.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
+    "babel-register": "^6.22.0",
     "eslint": "^3.13.0",
     "eslint-config-airbnb": "14.0.0",
     "eslint-config-airbnb-base": "11.0.1",
@@ -53,6 +61,7 @@
     "eslint-plugin-html": "^1.5.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-react": "^6.9.0",
+    "yarn": "^0.19.1"
   }
 }

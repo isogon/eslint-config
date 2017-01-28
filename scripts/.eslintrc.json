@@ -1,0 +1,9 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "../index.js"
+  ],
+  "rules": {
+    "no-console": "off"
+  }
+}

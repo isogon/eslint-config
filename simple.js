@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
-    'airbnb',
+    'airbnb-base',
     './rules/main.js',
-    './rules/react.js',
   ],
 };

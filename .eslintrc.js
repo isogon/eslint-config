@@ -2,6 +2,7 @@
 // and ideally is never used outside of this project
 
 module.exports = {
+  parser: "babel-eslint",
   extends: [
     'airbnb-base/legacy',
   ],

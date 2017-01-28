@@ -26,7 +26,9 @@
   "bugs": "https://github.com/isogon/eslint-config/issues",
   "main": "index.js",
   "scripts": {
-    "test": "yarn lint",
+    "test": "yarn test:before && yarn test:actual",
+    "test:before": "concurrently \"cd test-main && yarn\" \"cd test-simple && yarn\" \"cd test-tests && yarn\"",
+    "test:actual": "concurrently \"yarn lint\" \"cd test-main && yarn start\" \"cd test-simple && yarn start\" \"cd test-tests && yarn start\"",
     "lint": "eslint .",
     "prepublish": ""
   },
@@ -53,6 +55,7 @@
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "babel-register": "^6.22.0",
+    "concurrently": "^3.1.0",
     "eslint": "^3.13.0",
     "eslint-config-airbnb": "14.0.0",
     "eslint-config-airbnb-base": "11.0.1",

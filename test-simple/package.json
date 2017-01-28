@@ -1,0 +1,7 @@
+{
+  "name": "@isogon/test-simple-eslint-config",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "exit 0"
+  }
+}

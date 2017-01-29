@@ -4,7 +4,7 @@ import path from 'path';
 
 if (process.env.TRAVIS !== 'true') {
   console.log('deploys should only happen in travis');
-  process.exit(1);
+  process.exit(0);
 }
 
 if (process.env.TRAVIS_PULL_REQUEST !== 'false') {

@@ -1,6 +1,6 @@
-#!/usr/bin/env node -r babel-register
-import fs from 'fs';
-import path from 'path';
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
 
 if (process.env.TRAVIS !== 'true') {
   process.exit(0);

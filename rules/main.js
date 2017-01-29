@@ -3,6 +3,9 @@ module.exports = {
     browser: false,
   },
   rules: {
-    'arrow-parens': ['error', 'always']
-  }
+    'arrow-parens': [
+      'error',
+      'always',
+    ],
+  },
 };

@@ -3,7 +3,6 @@ import fs from 'fs';
 import path from 'path';
 
 if (process.env.TRAVIS !== 'true') {
-  console.log('deploys should only happen in travis');
   process.exit(0);
 }
 

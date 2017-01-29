@@ -30,7 +30,7 @@
     "test:before": "concurrently \"cd test-main && yarn\" \"cd test-simple && yarn\" \"cd test-tests && yarn\"",
     "test:actual": "concurrently \"yarn lint\" \"cd test-main && yarn start\" \"cd test-simple && yarn start\" \"cd test-tests && yarn start\"",
     "lint": "eslint .",
-    "postinstall": "./scripts/setVersion.js"
+    "prepublish": "./scripts/setVersion.js"
   },
   "babel": {
     "presets": [

@@ -1,0 +1,11 @@
+/node_modules
+/test-main
+/test-simple
+/test-tests
+/.editorconfg
+/.eslintignore
+/.eslintrc.js
+/.gitignore
+/.git
+/.travis.yml
+/scripts

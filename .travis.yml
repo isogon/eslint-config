@@ -2,3 +2,10 @@ language: node_js
 node_js:
 - '6'
 cache: yarn
+deploy:
+  provider: npm
+  api_key:
+    secure: uihINwdfHAACNvmqdUnmM/e5VxiuvQ0Mh1MVji6CArZA7x27LDg2PCV5Bn5PUFWXZGLcpJds89Fn1/NAD0Uu67tAX3PCLhTJOtc1lETLX48jS1Adno+9yfCUNuNRDv5BmUtn2aYwgBzbbz0U9DwiFLZcz+48s8tGTttpfR0bOhbNchs6d3TS3QW/CtCgFcmSvM6Ab7BC7aR19hB35hDqdo0ZEjmo0slY4rNJF8JTrAS5kkrZITte1d4KZ+4jW3kW1s2ptD2gWCN7NPRvWglu9+OQYau9ass0dqy6UhijLfX376X2wfoP+lsfKrpFGcsJ3W8QiAHHvW04DhT/FqWcKw8WtXyhhhtay3IOVepoSFE2uOwgf5lxoKKIj9XxD8ZYgg3Dyf/shsV5cNRAextkd1rszw3Cm903SUWRI271JunupRsNr27BeGyV13f8YFLQ/T+7b5xHNBy/ou/nj9+6Hm3OES7olL9buaB/cKLOyfZBhxC9BDKmIpYgKo+YON6kAntHMe4X0IqwuJi5QRBt0E1fXH71KZNc0VepHT+9kl/CImrHAg5vsBcU0kFD6rKLPmZGNmxqwIy6jjCRUxAPX5PS8aok1+yZ9rrwVKcxQTCfh18ZzQXhM9zGSfT1iCPlfDVGZxVr8NZHDZE9iYcYD82LZT+MMrqRXZ4sM+J16z4=
+  skip_cleanup: true
+  on:
+    tags: true

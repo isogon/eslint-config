@@ -5,5 +5,6 @@ module.exports = {
   rules: {
     // In our tests we often need to load files dynamically
     'global-require': 'off',
+    'import/no-dynamic-require': 'off',
   },
 };
